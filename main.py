@@ -28,9 +28,7 @@ def random_fortune():
         "You'll have an awesome today!"
     ]
 
-    random_index = random.randrange(len(fortune_list))
-
-    return fortune_list[random_index]
+    return random.choice(fortune_list)
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
